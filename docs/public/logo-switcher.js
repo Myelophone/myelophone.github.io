@@ -1,6 +1,5 @@
-const logo = document.querySelector('img.VPImage.logo');
-
 function updateLogo() {
+	const logo = document.querySelector('img.VPImage.logo');
 	const currentPath = window.location.pathname;
 	if (currentPath.startsWith('/ru/')) {
 		if (document.documentElement.classList.contains('dark')) {
@@ -17,7 +16,9 @@ function updateLogo() {
 	}
 }
 
-updateLogo();
+if (document.querySelector('img.VPImage.logo')) {
+	updateLogo();
+}
 
 const observer = new MutationObserver(() => {
 	updateLogo();
