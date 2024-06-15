@@ -32,3 +32,18 @@
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+/coverage
+*.log
+*.tgz
+.DS_Store
+.idea
+.temp
+.vite_opt_cache
+dist
+cache
+temp
+examples-temp
+node_modules
+pnpm-global
+TODOs.md
+*.timestamp-*.mjs

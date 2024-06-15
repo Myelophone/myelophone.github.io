@@ -1,0 +1,25 @@
+{
+	"name": "@myelophone/docs",
+	"version": "0.0.1",
+	"description": "MyelophOne dev stack docs",
+	"repository": "https://github.com/Myelophone/myelophone.github.io",
+	"author": "Aleks Ivanov <aleksivanov.me@gmail.com>",
+	"license": "commercial",
+	"private": true,
+	"packageManager": "yarn@4.3.0",
+	"type": "module",
+	"devDependencies": {
+		"@vite-pwa/vitepress": "^0.5.0",
+		"pagefind": "^1.1.0",
+		"vite-plugin-pwa": "^0.20.0",
+		"vitepress": "^1.2.3",
+		"vitepress-plugin-pagefind": "^0.4.1",
+		"vue": "^3.4.28",
+		"workbox-window": "^7.1.0"
+	},
+	"scripts": {
+		"dev": "vitepress dev docs",
+		"build": "vitepress build docs",
+		"preview": "vitepress preview docs"
+	}
+}
