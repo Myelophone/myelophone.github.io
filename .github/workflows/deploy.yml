@@ -19,13 +19,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build VitePress
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         env:
