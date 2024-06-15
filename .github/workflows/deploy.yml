@@ -23,6 +23,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Yarn
+        uses: threeal/setup-yarn-action@v2.0.0
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
