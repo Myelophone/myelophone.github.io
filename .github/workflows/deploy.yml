@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Enable Corepack
-        run: corepack enable
-
       - name: Setup Yarn
         uses: threeal/setup-yarn-action@v2.0.0
 
@@ -25,10 +22,10 @@ jobs:
           node-version: "20"
 
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
 
       - name: Build VitePress
-        run: yarn build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         env:
