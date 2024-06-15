@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Enable Corepack
-        run: npm install -g corepack@latest
-
       - name: Setup Yarn
         uses: threeal/setup-yarn-action@v2.0.0
 
@@ -31,21 +28,7 @@ jobs:
         run: yarn build
 
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Configure git
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          # Clone the gh-pages branch of the target repository
-          git clone --branch=gh-pages https://github.com/${{ github.repository }} deploy
-
-          # Copy the built files to the deploy directory
-          rsync -av --delete docs/.vitepress/dist/ deploy/
-
-          # Commit and push the changes
-          cd deploy
-          git add .
-          git commit -m "Deploy VitePress build from ${GITHUB_SHA}"
-          git push origin gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .vitepress/dist
