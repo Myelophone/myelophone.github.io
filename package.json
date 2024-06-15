@@ -5,7 +5,6 @@
 	"repository": "https://github.com/Myelophone/myelophone.github.io",
 	"author": "Aleks Ivanov <aleksivanov.me@gmail.com>",
 	"license": "commercial",
-	"private": true,
 	"packageManager": "yarn@4.3.0",
 	"type": "module",
 	"devDependencies": {
@@ -22,5 +21,6 @@
 		"dev": "vitepress dev docs",
 		"build": "vitepress build docs",
 		"preview": "vitepress preview docs"
-	}
+	},
+	"private": true
 }
