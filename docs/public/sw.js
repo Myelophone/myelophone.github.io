@@ -9,6 +9,7 @@ self.addEventListener('install', (event) => {
 			return cache.addAll(URLS_TO_CACHE);
 		})
 	);
+	self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
