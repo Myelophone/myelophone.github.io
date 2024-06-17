@@ -3,9 +3,9 @@ layout: home
 title: MyelophOne Dev Documents
 
 hero:
-  name: "MyelophOne Stack"
-  text: "Dev Documentation"
-  tagline: Our knowledge base. Necessaria et sufficiens.
+  name: "MyelophOne Стек"
+  text: "Dev Документация"
+  tagline: Наша база знаний. Необходимо и достаточно.
   image:
     src: /favicon.png
     alt: MyelophOne

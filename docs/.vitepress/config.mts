@@ -9,11 +9,6 @@ export default defineConfig({
 	description: "MyelophOne dev stack docs",
 	vite: {
 		plugins: [pagefindPlugin()],
-		resolve: {
-			alias: {
-				"@theme": path.join(__dirname, "theme"),
-			},
-		},
 	},
 	sitemap: {
 		hostname: "https://docs.myeloph.one",

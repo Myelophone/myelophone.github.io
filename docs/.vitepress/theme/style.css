@@ -157,6 +157,7 @@ html {
 
 .copyright {
 	font-weight: 300 !important;
+	opacity: 0.5;
 }
 
 body {
