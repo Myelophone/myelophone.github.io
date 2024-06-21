@@ -490,3 +490,5 @@ tmp/
 
 # System caches
 cache/
+
+install-state.gz

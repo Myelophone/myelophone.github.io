@@ -74,21 +74,47 @@ export default defineConfig({
 		nav: [
 			//{ text: "Home", link: "/" },
 			{ text: "Blog", link: "https://studio.myeloph.one/blog" },
-			{ text: "Examples", link: "/markdown-examples" },
+			{ text: "in English", link: "/" },
+			{ text: "на Русском", link: "/ru" },
 		],
 
-		sidebar: [
-			{
-				text: "Examples",
-				items: [
-					{ text: "Markdown Examples", link: "/markdown-examples" },
-					{ text: "Runtime API Examples", link: "/api-examples" },
-				],
-			},
-		],
+		sidebar: {
+			"/": [
+				{
+					text: "Examples",
+					items: [
+						{
+							text: "Markdown Examples",
+							link: "/markdown-examples",
+						},
+						{ text: "Runtime API Examples", link: "/api-examples" },
+						{
+							text: "Сonventional Сommits",
+							link: "/conventional-commits",
+						},
+					],
+				},
+			],
+			"/ru/": [
+				{
+					text: "Examples",
+					items: [
+						{
+							text: "Markdown Examples",
+							link: "/markdown-examples",
+						},
+						{ text: "Runtime API Examples", link: "/api-examples" },
+						{
+							text: "Паттерны git commit",
+							link: "/ru/conventional-commits",
+						},
+					],
+				},
+			],
+		},
 
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/vuejs/vitepress" },
+			{ icon: "github", link: "https://github.com/myelophone" },
 		],
 
 		footer: {
