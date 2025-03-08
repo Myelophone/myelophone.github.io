@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
-import path from "path";
+import path from "node:path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
